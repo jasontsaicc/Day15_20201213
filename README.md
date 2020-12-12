@@ -1,6 +1,6 @@
 # property_Decorator
 # Day15(12/13)
-<!-- property屬性‎
+property屬性‎
 ‎學習目標‎
 
 ‎能夠知道裝飾器方式的property屬性的定義方式‎
@@ -10,4 +10,4 @@
 ‎定義property屬性有兩種方式‎
 
 ‎裝飾器方式‎
-‎類屬性方式‎ -->
+‎類屬性方式‎ 
