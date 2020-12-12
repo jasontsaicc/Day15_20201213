@@ -1,4 +1,4 @@
-# property_Decorator
+# Property_Decorator
 # Day15(12/13)
 property屬性‎
 ‎學習目標‎
