@@ -8,13 +8,21 @@
 my_generator = (value *2 for value in range(3))
 print(my_generator)
 
-# 生成器取值使用next函數獲取生成器中的下一個值
-value = next(my_generator)
-print(value)
-value = next(my_generator)
-print(value)
-value = next(my_generator)
-print(value)
-# 當生成器已經沒有值時，會拋出StopIteration，表示生成器生成數據完畢
-value = next(my_generator)
-print(value)
+# # 生成器取值使用next函數獲取生成器中的下一個值
+# value = next(my_generator)
+# print(value)
+# value = next(my_generator)
+# print(value)
+# value = next(my_generator)
+# print(value)
+# # 當生成器已經沒有值時，會拋出StopIteration，表示生成器生成數據完畢
+# value = next(my_generator)
+# print(value)
+
+while True:
+    try:
+        value = next(my_generator)
+        print(value)
+    except Exception as e:
+        break
+#       跳出循環表示取值完成
