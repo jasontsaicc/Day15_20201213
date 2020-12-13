@@ -19,10 +19,15 @@ print(my_generator)
 # value = next(my_generator)
 # print(value)
 
-while True:
-    try:
-        value = next(my_generator)
-        print(value)
-    except Exception as e:
-        break
-#       跳出循環表示取值完成
+# while True:
+#     try:
+#         value = next(my_generator)
+#         print(value)
+#     except Exception as e:
+#         break
+#        跳出循環表示取值完成
+
+# for:循環內部循環調用next函數獲取生成器中的下一值，
+# 當出現異常for循環內部自動進行了異常捕獲。
+for value in my_generator:
+    print(value)
