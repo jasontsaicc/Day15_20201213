@@ -13,3 +13,10 @@ print("num1:", id(num1), "num2:", id(num2))
 
 # 對與不可變類型進行淺拷貝實際上，是對引用的一個拷貝，兩個變量值定的是同一個內存地址
 
+# 元組淺拷貝
+my_tuple1 = (3, 5)
+my_tuple2 = copy.copy(my_tuple1)
+print("my_tuple1:", id(my_tuple1), "my_tuple2", id(my_tuple2))
+
+# 淺拷貝不會對不可變類型進行拷貝，也就說不會開闢內存內存空間，
+# 對於不可變類型進行淺拷貝實際，是對引用的一個拷貝，兩個變量指定的是一個內存地址
