@@ -16,8 +16,16 @@ else:
     print("匹配失敗")
 
 
-# 1.+ 匹配前一個字符出現1次或者無限次，即至少有1次
+# 2.+ 匹配前一個字符出現1次或者無限次，即至少有1次
 match_obj = re.match("ta.+wan","tawan")
+if match_obj:
+    result = match_obj.group()
+    print(result)
+else:
+    print("匹配失敗")
+
+#3. ? 匹配前一個字符出現1次或者0次，即要么有1次，要么沒有
+match_obj = re.match("https?","http")
 if match_obj:
     result = match_obj.group()
     print(result)
