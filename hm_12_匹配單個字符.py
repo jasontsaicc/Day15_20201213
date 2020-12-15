@@ -17,3 +17,14 @@ if match_obj:
 else:
     # 匹配失敗match_obj是一個None
     print("匹配失敗")
+
+
+# []匹配[ ]中列举的字符
+# []內不用加逗號"," 不然會匹配到
+match_obj = re.match("Iron Man[12]", "Iron Man2")
+if match_obj:
+    result = match_obj.group()
+    print(result)
+else:
+    # 匹配失敗match_obj是一個None
+    print("匹配失敗")
