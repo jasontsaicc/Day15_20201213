@@ -19,7 +19,7 @@ else:
     print("匹配失敗")
 
 
-# []匹配[ ]中列举的字符
+# 2.[]匹配[ ]中列举的字符
 # []內不用加逗號"," 不然會匹配到
 match_obj = re.match("Iron Man[12]", "Iron Man2")
 if match_obj:
@@ -28,3 +28,14 @@ if match_obj:
 else:
     # 匹配失敗match_obj是一個None
     print("匹配失敗")
+
+# 3.\d	匹配数字，即0-9
+# 這裡也可以使用[0123456789] or [0-9]
+match_obj = re.match("\d", "23")
+if match_obj:
+    result = match_obj.group()
+    print(result)
+else:
+    # 匹配失敗match_obj是一個None
+    print("匹配失敗")
+
