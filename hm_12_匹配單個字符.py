@@ -57,9 +57,18 @@ else:
     # 匹配失敗match_obj是一個None
     print("匹配失敗")
 
-# \w。	匹配非特殊字元，即a-z、A-Z、0-9、_、漢字
+#6. \w。	匹配非特殊字元，即a-z、A-Z、0-9、_、漢字
 # 匹配密碼 [a-zA-Z0-9_]  or \w(但會包含漢字)
 match_obj = re.match("\w", "_")
+if match_obj:
+    result = match_obj.group()
+    print(result)
+else:
+    # 匹配失敗match_obj是一個None
+    print("匹配失敗")
+
+# 7.\W 匹配特殊字元，即非字母、非數字、非漢字
+match_obj = re.match("\W", "%")
 if match_obj:
     result = match_obj.group()
     print(result)
