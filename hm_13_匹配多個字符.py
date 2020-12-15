@@ -31,3 +31,11 @@ if match_obj:
     print(result)
 else:
     print("匹配失敗")
+
+#4. {m}	匹配前一個字符出現m次
+match_obj = re.match("ht{2}p","http")
+if match_obj:
+    result = match_obj.group()
+    print(result)
+else:
+    print("匹配失敗")
