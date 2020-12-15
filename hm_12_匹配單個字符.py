@@ -39,3 +39,12 @@ else:
     # 匹配失敗match_obj是一個None
     print("匹配失敗")
 
+# 4.\D	匹配非数字，即不是数字
+match_obj = re.match("\D", "jason")
+if match_obj:
+    result = match_obj.group()
+    print(result)
+else:
+    # 匹配失敗match_obj是一個None
+    print("匹配失敗")
+
