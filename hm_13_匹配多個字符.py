@@ -39,3 +39,11 @@ if match_obj:
     print(result)
 else:
     print("匹配失敗")
+
+# 5.{m，n} 匹配前一個字符出現從m到n次
+match_obj = re.match("ht{1,3}p","htttp")
+if match_obj:
+    result = match_obj.group()
+    print(result)
+else:
+    print("匹配失敗")
