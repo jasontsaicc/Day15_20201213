@@ -47,3 +47,11 @@ if match_obj:
     print(result)
 else:
     print("匹配失敗")
+
+# {m，n}拓展：n不指定
+match_obj = re.match("ht{1,}p","htttp")
+if match_obj:
+    result = match_obj.group()
+    print(result)
+else:
+    print("匹配失敗")
