@@ -14,3 +14,12 @@ if match_obj:
     print(result)
 else:
     print("匹配失敗")
+
+
+# 1.+ 匹配前一個字符出現1次或者無限次，即至少有1次
+match_obj = re.match("ta.+wan","tawan")
+if match_obj:
+    result = match_obj.group()
+    print(result)
+else:
+    print("匹配失敗")
