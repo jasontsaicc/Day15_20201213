@@ -48,3 +48,11 @@ else:
     # 匹配失敗match_obj是一個None
     print("匹配失敗")
 
+# 5.\s 匹配空白，即空格，tab鍵
+match_obj = re.match("jason\s[t]", "jason\tt")
+if match_obj:
+    result = match_obj.group()
+    print(result)
+else:
+    # 匹配失敗match_obj是一個None
+    print("匹配失敗")
