@@ -15,3 +15,13 @@ for value in fruit_list:
         print("我愛吃的fruit：" + result)
     else:
         print("我不吃的fruit：" + value)
+
+# 2.匹配出gmail, hotmail, yahoo
+# \.表示對正則表達式裡面的"."進行了轉義.變成了一個普通點 只能匹配.字符
+# (gmail|hotmail|yahoo) 表示一個分組，分組從1開始
+match_obj = re.match("[a-zA-Z0-9_.]{4,20}@(gmail|hotmail|yahoo)\.com","jasont.saicc@gmail.com")
+if match_obj:
+    result = match_obj.group(0)
+    print(result)
+else:
+    print("匹配失敗")
