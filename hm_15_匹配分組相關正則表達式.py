@@ -34,3 +34,13 @@ if match_obj:
     print(result)
 else:
     print("匹配失敗")
+
+
+# (?P<name>)	分组起别名
+match_obj = re.match("<(?P<name1>[a-zA-z1-6]+)><(?P<name2>[a-zA-z1-6]+)>.*</(?P=name2)></(?P=name1)"
+                     ">","<html><h1>www.google.com</h1></html>")
+if match_obj:
+    result = match_obj.group(0)
+    print(result)
+else:
+    print("匹配失敗")
