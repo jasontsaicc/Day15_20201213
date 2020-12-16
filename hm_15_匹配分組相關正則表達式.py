@@ -25,3 +25,12 @@ if match_obj:
     print(result)
 else:
     print("匹配失敗")
+
+# \num	引用分组num匹配到的字符串
+# "<html>hh</html>"
+match_obj = re.match("<([a-zA-z1-6]+)>.*</\\1>","<html>hh</html>")
+if match_obj:
+    result = match_obj.group(0)
+    print(result)
+else:
+    print("匹配失敗")
